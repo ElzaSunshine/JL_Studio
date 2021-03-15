@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/fonts/icomoon.eot?svns3u');
+    src: url('../fonts/icomoon/fonts/icomoon.eot?svns3u#iefix') format('embedded-opentype'), url('../fonts/icomoon/fonts/icomoon.ttf?svns3u') format('truetype'), url('../fonts/icomoon/fonts/icomoon.woff?svns3u') format('woff'), url('../fonts/icomoon/fonts/icomoon.svg?svns3u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-Regular.eot");
+    src: url("../fonts/inter/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/Inter-Regular.woff2") format("woff2"), url("../fonts/inter/Inter-Regular.woff") format("woff"), url("../fonts/inter/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-Medium.eot");
+    src: url("../fonts/inter/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/Inter-Medium.woff2") format("woff2"), url("../fonts/inter/Inter-Medium.woff") format("woff"), url("../fonts/inter/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-SemiBold.eot");
+    src: url("../fonts/inter/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/Inter-SemiBold.woff2") format("woff2"), url("../fonts/inter/Inter-SemiBold.woff") format("woff"), url("../fonts/inter/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-Bold.eot");
+    src: url("../fonts/inter/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/Inter-Bold.woff2") format("woff2"), url("../fonts/inter/Inter-Bold.woff") format("woff"), url("../fonts/inter/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-ExtraBold.eot");
+    src: url("../fonts/inter/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/inter/Inter-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/playfair-display/playfair-600.eot");
+    src: url("../fonts/playfair-display/playfair-600.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display/playfair-600.woff2") format("woff2"), url("../fonts/playfair-display/playfair-600.woff") format("woff"), url("../fonts/playfair-display/playfair-600.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/roboto-regular.eot");
+    src: url("../fonts/roboto/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-regular.woff") format("woff"), url("../fonts/roboto/roboto-regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*header*/
+
+.header {}
+
+.wrapper-header {
+    max-width: 1920px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header__top .wrapper-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #181614;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top__left {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__logo {
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.header-top__logo span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #A7A7A6;
+}
+
+.header-top__img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header-top__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header-top__nav {}
+
+.header-top__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__menu-item {
+    padding-right: 15px;
+}
+
+.header-top__menu-item:last-child {
+    padding-right: 0;
+}
+
+.header-top__right {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__phone {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #D1AD98;
+    padding-right: 15px;
+}
+
+.header-top__address {
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.header-top__soc {
+    display: flex;
+    align-items: center;
+}
+
+.header-soc__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A7A7A6;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.header-soc__item span:before {
+    font-size: 23px;
+}
+
+.header__bottom {
+    display: flex;
+}
+
+.header-bottom__item {
+    display: block;
+    width: 33.333%;
+}
+
+.header-bottom__img {
+    display: block;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-bottom__img img {
+    display: block;
+    /* width: 100%; */
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-bottom__title {}
+
+.header-bottom__arrow {}

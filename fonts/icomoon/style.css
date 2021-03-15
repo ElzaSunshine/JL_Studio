@@ -1,0 +1,94 @@
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.icon-bottom:before {
+    content: "\e908";
+    color: #fff;
+}
+
+.icon-top:before {
+    content: "\e90b";
+    color: #fff;
+}
+
+.icon-left:before {
+    content: "\e90c";
+    color: #fff;
+}
+
+.icon-bottom-big:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-burger:before {
+    content: "\e903";
+    color: #fff;
+}
+
+.icon-cross:before {
+    content: "\e904";
+    color: #fff;
+}
+
+.icon-document:before {
+    content: "\e905";
+    color: #fff;
+}
+
+.icon-facebook:before {
+    content: "\e906";
+    color: #fff;
+}
+
+.icon-instagram:before {
+    content: "\e907";
+    color: #fff;
+}
+
+.icon-left-big:before {
+    content: "\e909";
+    color: #fff;
+}
+
+.icon-play:before {
+    content: "\e90a";
+    color: #fff;
+}
+
+.icon-right-big:before {
+    content: "\e90d";
+    color: #fff;
+}
+
+.icon-top-big:before {
+    content: "\e90f";
+    color: #fff;
+}
+
+.icon-vk:before {
+    content: "\e910";
+    color: #fff;
+}
+
+.icon-right:before {
+    content: "\e900";
+    color: #fff;
+}
