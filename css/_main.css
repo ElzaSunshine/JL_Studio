@@ -1,0 +1,187 @@
+/*общие стили */
+
+*,
+*:before,
+*:after {
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 67px;
+    line-height: 67px;
+}
+
+h3 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h4 {}
+
+h5 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.wrapper-header {
+    max-width: 1920px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1264px;
+    padding: 0 47px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.soc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A7A7A6;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.soc-item span:before {
+    font-size: 23px;
+}
+
+@media(max-width: 1799px) {
+    h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    h1 {
+        font-size: 67px;
+        line-height: 67px;
+    }
+    h2 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+}
+
+@media(max-width: 1279px) {
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media(max-width: 1023px) {
+    body.hidden {
+        overflow: hidden;
+    }
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .wrapper {
+        max-width: 1248px;
+        padding: 0 39px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media(max-width: 767px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

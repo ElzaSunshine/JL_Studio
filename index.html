@@ -14,77 +14,86 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="header__top">
             <div class="wrapper-header">
-                <div class="header-top__left">
-                    <a class="header-top__logo">
-                        <div class="header-top__img">
-                            <img src="img/logo.png" alt="Логотип">
-                        </div>
-                        <span>JL Studio</span>
-                    </a>
+                <a class="header-top__logo" href="index.html">
+                    <div class="header-top__img">
+                        <img src="img/logo.png" alt="Логотип">
+                    </div>
+                    <span>JL Studio</span>
+                </a>
+                <button class="header__mobile-menu">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </button>
+                <div class="header-top__main-nav">
                     <nav class="header-top__nav">
                         <ul class="header-top__menu">
                             <li class="header-top__menu-item">
-                                <a href="#">Аренда студии</a>
+                                <a href="arenda.html">Аренда студии</a>
                             </li>
                             <li class="header-top__menu-item">
-                                <a href="#">B2B</a>
+                                <a href="b2b.html">B2B</a>
                             </li>
                             <li class="header-top__menu-item">
-                                <a href="#">Мероприятия</a>
+                                <a href="events.html">Мероприятия</a>
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="header-top__right">
-                    <a class="header-top__phone" href="tel:+79050204213">+7 905 020-42-13</a>
-                    <div class="header-top__address">г. Казань, ул. Жуковка, 2 к2</div>
-                    <div class="header-top__soc">
-                        <a class="header-soc__item" href="#" target="_blank">
-                            <span class="icon-vk"></span>
-                        </a>
-                        <a class="header-soc__item" href="#" target="_blank">
-                            <span class="icon-instagram"></span>
-                        </a>
-                        <a class="header-soc__item" href="#" target="_blank">
-                            <span class="icon-facebook"></span>
-                        </a>
+                    <div class="header-top__right">
+                        <div class="header-top__main-info">
+                            <a class="header-top__phone" href="tel:+79050204213">+7 905 020-42-13</a>
+                            <div class="header-top__address">г. Казань, ул. Жуковка, 2 к2</div>
+                        </div>
+                        <div class="header-top__soc social">
+                            <a class="header-soc__item soc-item" href="#" target="_blank">
+                                <span class="icon-vk"></span>
+                            </a>
+                            <a class="header-soc__item soc-item" href="#" target="_blank">
+                                <span class="icon-instagram"></span>
+                            </a>
+                            <a class="header-soc__item soc-item" href="#" target="_blank">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <div class="header__bottom">
-            <a href="#" class="header-bottom__item">
+            <a href="arenda.html" class="header-bottom__item">
                 <div class="header-bottom__img">
                     <img src="img/header1.png" alt="">
                 </div>
                 <div class="header-bottom__title">
-                    <div class="header-bottom__title">Аренда студии для фотосессий</div>
+                    <h2 class="header-bottom__text">Аренда студии для фотосессий</h2>
                     <div class="header-bottom__arrow">
                         <span class="icon-right-big"></span>
                     </div>
                 </div>
             </a>
-            <a href="#" class="header-bottom__item">
+            <a href="b2b.html" class="header-bottom__item">
                 <div class="header-bottom__img">
                     <img src="img/header2.jpg" alt="">
                 </div>
                 <div class="header-bottom__title">
-                    <div class="header-bottom__title">Фото и видеосъемка для B2B </div>
+                    <h2 class="header-bottom__text">Фото и видеосъемка для B2B </h2>
                     <div class="header-bottom__arrow">
                         <span class="icon-right-big"></span>
                     </div>
                 </div>
             </a>
-            <a href="#" class="header-bottom__item">
+            <a href="events.html" class="header-bottom__item">
                 <div class="header-bottom__img">
                     <img src="img/header3.jpg" alt="">
                 </div>
                 <div class="header-bottom__title">
-                    <div class="header-bottom__title">Мероприятия</div>
+                    <h2 class="header-bottom__text">Мероприятия</h2>
                     <div class="header-bottom__arrow">
                         <span class="icon-right-big"></span>
                     </div>
@@ -92,9 +101,39 @@
             </a>
         </div>
     </header>
+    <!-- main -->
     <main>
-
     </main>
+    <!-- footer -->
+    <footer class="footer section">
+        <div class="wrapper">
+            <div class="footer__info">
+                <h3 class="footer__title title">Контакты</h3>
+                <a class="footer__phone" href="tel:+79050204213">+7 905 020-42-13</a>
+                <div class="footer__address">г. Казань, ул. Жуковка, 2 к2</div>
+                <div class="footer__soc social">
+                    <a class="footer-soc__item soc-item" href="#" target="_blank">
+                        <span class="icon-vk"></span>
+                    </a>
+                    <a class="footer-soc__item soc-item" href="#" target="_blank">
+                        <span class="icon-instagram"></span>
+                    </a>
+                    <a class="footer-soc__item soc-item" href="#" target="_blank">
+                        <span class="icon-facebook"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__place">
+                <div class="footer__map" style="background-color: #D1AD98;">
+                    <!-- временно, поменять на карту -->
+                </div>
+                <div class="footer__place-img">
+                    <img src="img/place.jpg" alt="Фотография студии">
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
