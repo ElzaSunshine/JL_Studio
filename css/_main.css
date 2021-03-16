@@ -45,6 +45,7 @@ h6 {
     font-family: 'Playfair Display', sans-serif;
     margin: 0;
     font-weight: 600;
+    text-align: center;
 }
 
 h1 {
@@ -106,6 +107,19 @@ h5 {
     font-size: 23px;
 }
 
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background: #D1AD98;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
 @media(max-width: 1799px) {
     h2 {
         font-size: 50px;
@@ -114,6 +128,9 @@ h5 {
 }
 
 @media(max-width: 1439px) {
+    .wrapper-header {
+        padding: 0 15px;
+    }
     .section {
         padding-top: 60px;
         padding-bottom: 60px;

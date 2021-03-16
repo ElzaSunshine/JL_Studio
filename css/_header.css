@@ -199,7 +199,82 @@
     font-size: 24px;
 }
 
-@media(max-width: 1439px) {}
+.header__section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__section:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(24, 22, 20, 0.4) 0%, rgba(24, 22, 20, 0) 100%);
+    z-index: 2;
+}
+
+.header__title {
+    text-align: center;
+    z-index: 5;
+    max-width: 700px;
+}
+
+.header__menu {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.header__menu:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 63px;
+    background: #FFFFFF;
+    opacity: 0.2;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.header__menu ul {
+    display: flex;
+    margin: 0;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.header__menu ul li {
+    padding-right: 30px;
+}
+
+.header__menu ul li:last-child {
+    padding-right: 0;
+}
+
+.header-menu__item {}
+
+@media(max-width: 1439px) {
+    .header__section {
+        height: 530px;
+    }
+}
 
 @media(max-width: 1279px) {
     .header-top__main-info {
@@ -210,6 +285,12 @@
     .header-top__phone,
     .header-top__address {
         padding-right: 0;
+    }
+    .header__section {
+        height: 424px;
+    }
+    .header__menu ul li {
+        padding-right: 15px;
     }
 }
 
@@ -364,6 +445,12 @@
     .header-bottom__arrow {
         display: none;
     }
+    .header__menu {
+        display: none;
+    }
+    .header__section {
+        height: 318px;
+    }
 }
 
 @media(max-width: 767px) {
@@ -384,6 +471,9 @@
         padding-bottom: 20px;
     }
     .header-bottom__img {
+        height: 200px;
+    }
+    .header__section {
         height: 200px;
     }
 }
