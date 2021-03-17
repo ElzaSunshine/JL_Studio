@@ -69,6 +69,50 @@
     border: 1px solid #EFDDC8;
 }
 
+@media(max-width: 1439px) {
+    .halls__img {
+        height: 300px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .halls__img {
+        height: 240px;
+        margin-bottom: 10px;
+    }
+    .halls__title {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 0;
+    }
+    .halls__info {
+        padding-bottom: 10px;
+    }
+    .halls__buttons {
+        flex-direction: column;
+    }
+    .halls__buttons .btn {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .halls__buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .halls__items {
+        flex-direction: column;
+    }
+    .halls__item {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .halls__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
 
 /*свобод даты*/
 
@@ -79,6 +123,21 @@
     height: 613px;
     padding: 10px;
     margin-bottom: 40px;
+}
+
+@media(max-width: 1439px) {
+    .dates__table {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .dates__table {
+        width: 100%;
+        height: 510px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -110,6 +169,27 @@
 
 .reg__btn span:before {
     font-size: 23px;
+}
+
+@media(max-width: 1439px) {
+    .reg__btn {
+        margin-top: 30px
+    }
+}
+
+@media(max-width: 1023px) {
+    .reg__text {
+        max-width: 100%;
+    }
+    .reg__btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .reg__btn {
+        justify-content: center;
+    }
 }
 
 
@@ -144,13 +224,254 @@
     font-size: 24px;
 }
 
-.inst__photos {}
+.inst__container {
+    position: relative;
+}
+
+.swiper-container.inst-swiper {}
+
+.swiper-wrapper.inst-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 25vw 25vw; */
+}
+
+.swiper-slide.inst-slide {
+    width: auto;
+}
+
+.inst-slide a {}
+
+.inst-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1919px) {
+    .section__instagram .wrapper {
+        padding: 0 35px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .section__instagram .wrapper {
+        padding: 0 40px;
+    }
+    .inst__text {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 1279px) {
+    .section__instagram .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .section__instagram .wrapper {
+        padding: 0 15px;
+    }
+    .inst__text {
+        margin-bottom: 20px;
+    }
+}
 
 
 /*акции*/
 
+.promo__container {
+    position: relative;
+}
+
+.swiper-container.promo-swiper {
+    position: relative;
+}
+
+.swiper-wrapper.promo-wrapper {
+    display: flex;
+}
+
+.swiper-slide.promo-slide {
+    width: calc(33.3333333% - 20px);
+    margin-right: 30px;
+}
+
+.swiper-slide.promo-slide:last-child {
+    margin-right: 0;
+}
+
+.promo-slide a {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 370px;
+}
+
+.promo-slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.promo__btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media(max-width: 1439px) {
+    .promo__btn-container {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1279px) {
+    .promo-slide a {
+        height: 290px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .promo-slide a {
+        height: 210px;
+    }
+    .promo__btn-container {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .promo-slide a {
+        height: 290px;
+    }
+    .swiper-slide.promo-slide {
+        width: 100%;
+        margin-right: 0;
+    }
+    .promo__btn-container {
+        display: block;
+    }
+}
+
 
 /*фотографы*/
+
+.ph__container {
+    position: relative;
+}
+
+.swiper-wrapper.ph-wrapper {
+    display: flex;
+}
+
+.swiper-slide.prh-slide {
+    width: 100%;
+}
+
+.ph__photo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 340px;
+}
+
+.ph__photo img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.ph__info {
+    margin-top: 15px;
+}
+
+.ph__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.ph__price {
+    color: #737373;
+    padding-bottom: 10px;
+}
+
+.ph__inst {
+    display: flex;
+    align-items: center;
+    color: #D1AD98;
+}
+
+.ph__inst span {
+    margin-right: 5px;
+}
+
+.ph__inst span:before {
+    color: #D1AD98;
+    font-size: 24px;
+}
+
+.ph__btns .slider-btn_back,
+.ph__btns .slider-btn_forward {
+    top: calc(170px - 22px);
+}
+
+@media(max-width: 1439px) {}
+
+@media(max-width: 1279px) {
+    .ph__photo {
+        height: 280px;
+    }
+    .ph__name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .ph__btns .slider-btn_back,
+    .ph__btns .slider-btn_forward {
+        top: calc(140px - 22px);
+    }
+}
+
+@media(max-width: 1023px) {
+    .ph__photo {
+        height: 210px;
+    }
+    .ph__btns .slider-btn_back,
+    .ph__btns .slider-btn_forward {
+        top: calc(105px - 22px);
+    }
+}
+
+@media(max-width:767px) {
+    .ph__photo {
+        height: 290px;
+    }
+    .ph__btns .slider-btn_back,
+    .ph__btns .slider-btn_forward {
+        top: calc(145px - 22px);
+    }
+}
 
 
 /*карта*/
@@ -216,6 +537,31 @@
     color: #D1AD98;
 }
 
+@media(max-width: 1439px) {
+    .cart__info {
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .cart__info {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .ph__img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .cart__text {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {}
+
+
+/*
 @media(max-width: 1919px) {
     .section__instagram .wrapper {
         padding: 0 35px;
@@ -326,3 +672,4 @@
         width: 100%;
     }
 }
+*/

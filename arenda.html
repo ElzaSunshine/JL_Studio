@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>JL Studio</title>
@@ -149,43 +150,120 @@
                         <span class="icon-instagram"></span>
                     </a>
                 </div>
-                <!-- добавить контейнер  для swiper -->
-                <div class="inst__photos">
-                    <a href="#" class="">
-                        <img src="img/inst/1.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/2.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/3.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/4.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/5.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/6.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/7.png" alt="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="img/inst/8.png" alt="">
-                    </a>
+                <div class="inst__container">
+                    <div class="swiper-container inst-swiper">
+                        <div class="swiper-wrapper inst-wrapper">
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/6.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/7.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="">
+                                    <img src="img/inst/8.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section__promo section">
-            <div class="wrapper">
+            <div class="wrapper flex">
                 <h3 class="title promo__title">Акции</h3>
-                <div class="swiper-container">
-
+                <div class="promo__container">
+                    <div class="swiper-container promo-swiper">
+                        <div class="swiper-wrapper promo-wrapper">
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide promo-slide">
+                                <a href="#">
+                                    <img src="img/promo3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__btns">
+                        <button class="slider-btn_back btn-slider">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider">
+                            <span class="icon-right-big"></span>
+                        </button>
+                    </div>
                 </div>
-                <a href="#" class="btn promo__btn">забронировать</a>
+                <div class="promo__btn-container">
+                    <a href="#" class="btn promo__btn">забронировать</a>
+                </div>
             </div>
         </section>
 
@@ -193,65 +271,77 @@
             <div class="wrapper">
                 <h3 class="title ph__title">Наши фотографы</h3>
                 <div class="ph__container">
-                    <div class="ph__item">
-                        <div class="ph__photo">
-                            <img src="img/ph/ph1.jpg" alt="">
-                        </div>
-                        <div class="ph__info">
-                            <div class="ph__name">Космодемьянская Юля</div>
-                            <div class="ph__price">от 1500 руб/час</div>
-                            <a href="#" class="ph__inst">
-                                <span class="icon-instagram"></span> Instagram
-                            </a>
+                    <div class="swiper-container ph-swiper">
+                        <div class="swiper-wrapper ph-wrapper">
+                            <div class="swiper-slide prh-slide">
+                                <div class="ph__photo">
+                                    <img src="img/ph/ph1.jpg" alt="">
+                                </div>
+                                <div class="ph__info">
+                                    <div class="ph__name">Космодемьянская Юля</div>
+                                    <div class="ph__price">от 1500 руб/час</div>
+                                    <a href="#" class="ph__inst">
+                                        <span class="icon-instagram"></span> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide prh-slide">
+                                <div class="ph__photo">
+                                    <img src="img/ph/ph1.jpg" alt="">
+                                </div>
+                                <div class="ph__info">
+                                    <div class="ph__name">Космодемьянская Юля</div>
+                                    <div class="ph__price">от 1500 руб/час</div>
+                                    <a href="#" class="ph__inst">
+                                        <span class="icon-instagram"></span> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide prh-slide">
+                                <div class="ph__photo">
+                                    <img src="img/ph/ph2.png" alt="">
+                                </div>
+                                <div class="ph__info">
+                                    <div class="ph__name">Константинопольский Константин</div>
+                                    <div class="ph__price">от 2000 руб/час</div>
+                                    <a href="#" class="ph__inst">
+                                        <span class="icon-instagram"></span> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide prh-slide">
+                                <div class="ph__photo">
+                                    <img src="img/ph/ph3.jpg" alt="">
+                                </div>
+                                <div class="ph__info">
+                                    <div class="ph__name">Тихомирова Азалия</div>
+                                    <div class="ph__price">от 2500 руб/час </div>
+                                    <a href="#" class="ph__inst">
+                                        <span class="icon-instagram"></span> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide prh-slide">
+                                <div class="ph__photo">
+                                    <img src="img/ph/ph4.jpg" alt="">
+                                </div>
+                                <div class="ph__info">
+                                    <div class="ph__name">Антонов Николай</div>
+                                    <div class="ph__price">от 3000 руб/час</div>
+                                    <a href="#" class="ph__inst">
+                                        <span class="icon-instagram"></span> Instagram
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="ph__item">
-                        <div class="ph__photo">
-                            <img src="img/ph/ph1.jpg" alt="">
-                        </div>
-                        <div class="ph__info">
-                            <div class="ph__name">Космодемьянская Юля</div>
-                            <div class="ph__price">от 1500 руб/час</div>
-                            <a href="#" class="ph__inst">
-                                <span class="icon-instagram"></span> Instagram
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ph__item">
-                        <div class="ph__photo">
-                            <img src="img/ph/ph2.png" alt="">
-                        </div>
-                        <div class="ph__info">
-                            <div class="ph__name">Константинопольский Константин</div>
-                            <div class="ph__price">от 2000 руб/час</div>
-                            <a href="#" class="ph__inst">
-                                <span class="icon-instagram"></span> Instagram
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ph__item">
-                        <div class="ph__photo">
-                            <img src="img/ph/ph3.jpg" alt="">
-                        </div>
-                        <div class="ph__info">
-                            <div class="ph__name">Тихомирова Азалия</div>
-                            <div class="ph__price">от 2500 руб/час </div>
-                            <a href="#" class="ph__inst">
-                                <span class="icon-instagram"></span> Instagram
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ph__item">
-                        <div class="ph__photo">
-                            <img src="img/ph/ph4.jpg" alt="">
-                        </div>
-                        <div class="ph__info">
-                            <div class="ph__name">Антонов Николай</div>
-                            <div class="ph__price">от 3000 руб/час</div>
-                            <a href="#" class="ph__inst">
-                                <span class="icon-instagram"></span> Instagram
-                            </a>
-                        </div>
+                    <div class="ph__btns">
+                        <button class="slider-btn_back btn-slider">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider">
+                            <span class="icon-right-big"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -285,7 +375,7 @@
                         </div>
                         <div class="cart-text__item">
                             <span>5</span>
-                            <div>Скидка распространяется только на аренду залов, все дополни- тельные услуги оплачиваются в полной мере</div>
+                            <div>Скидка распространяется только на аренду залов, все дополнительные услуги оплачиваются в полной мере</div>
                         </div>
                         <div class="cart-text__item">
                             <span>6</span>
@@ -328,7 +418,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
