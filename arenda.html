@@ -64,7 +64,7 @@
 
             </div>
         </div>
-        <div class="header__section" style="background-image: url('img/header1.png');">
+        <div class="header__section flex-column" style="background-image: url('img/header1.png');">
             <h1 class="header__title">Аренда студии <br> для фотосессий</h1>
             <div class="header__menu">
                 <div class="wrapper">
@@ -88,9 +88,9 @@
                 <h3 class="title section-halls__title">Наши залы</h3>
                 <div class="halls__items">
                     <div class="halls__item">
-                        <div class="halls__img">
+                        <a class="halls__img" href="#">
                             <img src="img/header1.png" alt="">
-                        </div>
+                        </a>
                         <div class="halls__info">
                             <div class="halls__title">Зал J</div>
                             <div class="halls__price">от 1500 руб/час</div>
@@ -101,9 +101,9 @@
                         </div>
                     </div>
                     <div class="halls__item">
-                        <div class="halls__img">
+                        <a class="halls__img" href="#">
                             <img src="img/header1.png" alt="">
-                        </div>
+                        </a>
                         <div class="halls__info">
                             <div class="halls__title">Зал L</div>
                             <div class="halls__price">от 1700 руб/час</div>
@@ -117,11 +117,192 @@
             </div>
         </section>
 
+        <section class="section__dates section">
+            <div class="wrapper flex-column">
+                <h3 class="title dates__title">Свободные даты</h3>
+                <div class="dates__table" style="background-color:  #D1AD98;">
+                    <!-- таблица -->
+                </div>
+                <a class="dates__reserv btn" href="#">забронировать</a>
+            </div>
+        </section>
+
+        <section class="section__regulations section">
+            <div class="wrapper flex-column">
+                <h3 class="title reg__title">Правила</h3>
+                <div class="reg__text">
+                    <p>Важно!</p>
+                    <p>Друзья! Просим внимательно ознакомиться со всеми нашими правилами, изложенными ниже, потому что это действительно важно! Рекомендуем также отправить ссылку на эти правила всем участникам вашей съёмки во избежание неприятных моментов
+                        связанных с посещением нашей фотостудии.</p>
+                    <p>Спасибо!</p>
+                </div>
+                <a href="#" class="btn reg__btn">
+                    <span class="icon-document"></span>полный список правил</a>
+            </div>
+        </section>
+
+        <section class="section__instagram section">
+            <div class="wrapper">
+                <h3 class="title inst__title">Cнято у нас</h3>
+                <div class="inst__text">Ещё больше фотографий в нашем
+                    <a href="#">Instagram
+                        <span class="icon-instagram"></span>
+                    </a>
+                </div>
+                <!-- добавить контейнер  для swiper -->
+                <div class="inst__photos">
+                    <a href="#" class="">
+                        <img src="img/inst/1.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/2.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/3.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/4.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/5.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/6.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/7.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="img/inst/8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__promo section">
+            <div class="wrapper">
+                <h3 class="title promo__title">Акции</h3>
+                <div class="swiper-container">
+
+                </div>
+                <a href="#" class="btn promo__btn">забронировать</a>
+            </div>
+        </section>
+
+        <section class="section__photographers section">
+            <div class="wrapper">
+                <h3 class="title ph__title">Наши фотографы</h3>
+                <div class="ph__container">
+                    <div class="ph__item">
+                        <div class="ph__photo">
+                            <img src="img/ph/ph1.jpg" alt="">
+                        </div>
+                        <div class="ph__info">
+                            <div class="ph__name">Космодемьянская Юля</div>
+                            <div class="ph__price">от 1500 руб/час</div>
+                            <a href="#" class="ph__inst">
+                                <span class="icon-instagram"></span> Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ph__item">
+                        <div class="ph__photo">
+                            <img src="img/ph/ph1.jpg" alt="">
+                        </div>
+                        <div class="ph__info">
+                            <div class="ph__name">Космодемьянская Юля</div>
+                            <div class="ph__price">от 1500 руб/час</div>
+                            <a href="#" class="ph__inst">
+                                <span class="icon-instagram"></span> Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ph__item">
+                        <div class="ph__photo">
+                            <img src="img/ph/ph2.png" alt="">
+                        </div>
+                        <div class="ph__info">
+                            <div class="ph__name">Константинопольский Константин</div>
+                            <div class="ph__price">от 2000 руб/час</div>
+                            <a href="#" class="ph__inst">
+                                <span class="icon-instagram"></span> Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ph__item">
+                        <div class="ph__photo">
+                            <img src="img/ph/ph3.jpg" alt="">
+                        </div>
+                        <div class="ph__info">
+                            <div class="ph__name">Тихомирова Азалия</div>
+                            <div class="ph__price">от 2500 руб/час </div>
+                            <a href="#" class="ph__inst">
+                                <span class="icon-instagram"></span> Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ph__item">
+                        <div class="ph__photo">
+                            <img src="img/ph/ph4.jpg" alt="">
+                        </div>
+                        <div class="ph__info">
+                            <div class="ph__name">Антонов Николай</div>
+                            <div class="ph__price">от 3000 руб/час</div>
+                            <a href="#" class="ph__inst">
+                                <span class="icon-instagram"></span> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__cart section">
+            <div class="wrapper flex-column">
+                <h3 class="title cart__title">Программа лояльности и абонементы</h3>
+                <div class="cart__info">
+                    <div class="ph__img">
+                        <img src="img/cart.png" alt="карта лояльности">
+                    </div>
+
+                    <div class="cart__text">
+                        <div class="cart-text__item">
+                            <span>1</span>
+                            <div>Карта действительна до окончания срока программы лояльности</div>
+                        </div>
+                        <div class="cart-text__item">
+                            <span>2</span>
+                            <div>Программа лояльности расространяется на оба зала ( J, L)</div>
+                        </div>
+                        <div class="cart-text__item">
+                            <span>3</span>
+                            <div>Скидка распространяется на посещение (вне зависимости от количества забронированных часов)</div>
+                        </div>
+
+                        <div class="cart-text__item">
+                            <span>4</span>
+                            <div>Используя 6-ое подарочное посещение, вы можете забронировать зал не более чем на 2 часа</div>
+                        </div>
+                        <div class="cart-text__item">
+                            <span>5</span>
+                            <div>Скидка распространяется только на аренду залов, все дополни- тельные услуги оплачиваются в полной мере</div>
+                        </div>
+                        <div class="cart-text__item">
+                            <span>6</span>
+                            <div>Все подробности можете уточнить по телефону: <a href="tel:+79050204213">+7 905 020-42-13</a></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn cart__bnt">забронировать</a>
+            </div>
+        </section>
+
+
     </main>
     <!-- footer -->
     <footer class="footer section">
         <div class="wrapper">
-            <div class="footer__info">
+            <div class="footer__info flex-column">
                 <h3 class="footer__title title">Контакты</h3>
                 <a class="footer__phone" href="tel:+79050204213">+7 905 020-42-13</a>
                 <div class="footer__address">г. Казань, ул. Жуковка, 2 к2</div>
@@ -139,7 +320,7 @@
             </div>
             <div class="footer__place">
                 <div class="footer__map" style="background-color: #D1AD98;">
-                    <!-- добавить карту -->
+                    <!-- карта -->
                 </div>
                 <div class="footer__place-img">
                     <img src="img/place.jpg" alt="Фотография студии">

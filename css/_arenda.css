@@ -1,7 +1,5 @@
-.section-halls {}
-
-.title.section-halls__title {
-    padding-bottom: 40px;
+.section-halls {
+    background-color: #fff;
 }
 
 .halls__items {
@@ -53,12 +51,278 @@
     color: #737373;
 }
 
-.halls__buttons {}
+.halls__buttons {
+    display: flex;
+}
 
-.halls__book {}
+.halls__buttons .btn {
+    margin-right: 10px;
+}
+
+.halls__buttons .btn:last-child {
+    margin-right: 0;
+}
 
 .halls__more.btn {
     background-color: #fff;
     color: #D1AD98;
     border: 1px solid #EFDDC8;
+}
+
+
+/*свобод даты*/
+
+.dates__table {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 825px;
+    height: 613px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+/*правила*/
+
+.section__regulations {
+    background-color: #fff;
+}
+
+.reg__text {
+    max-width: 770px;
+    text-align: center;
+}
+
+.reg__text p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.reg__btn {
+    display: flex;
+    align-items: center;
+    margin-top: 40px
+}
+
+.reg__btn span {
+    margin-right: 10px;
+}
+
+.reg__btn span:before {
+    font-size: 23px;
+}
+
+
+/*instagram*/
+
+.section__instagram .wrapper {
+    max-width: 1920px;
+    padding: 0 30px;
+}
+
+.inst__title.title {
+    padding-bottom: 15px;
+}
+
+.inst__text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inst__text a {
+    display: inline-flex;
+    align-items: center;
+    color: #D1AD98;
+}
+
+.inst__text span {
+    margin-left: 3px;
+}
+
+.inst__text span.icon-instagram:before {
+    color: #D1AD98;
+    font-size: 24px;
+}
+
+.inst__photos {}
+
+
+/*акции*/
+
+
+/*фотографы*/
+
+
+/*карта*/
+
+.section__cart {
+    background-color: #fff;
+}
+
+.cart__info {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.ph__img {
+    width: calc(50% - 15px);
+    height: auto;
+    margin-right: 30px;
+}
+
+.ph__img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.cart__text {
+    width: calc(50% - 15px);
+}
+
+.cart-text__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+.cart-text__item:last-child {
+    padding-bottom: 0;
+}
+
+.cart-text__item span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background-color: #D1AD98;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-text__item div,
+.cart-text__item p {
+    padding-left: 10px;
+}
+
+.cart-text__item a {
+    color: #D1AD98;
+}
+
+@media(max-width: 1919px) {
+    .section__instagram .wrapper {
+        padding: 0 35px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .halls__img {
+        height: 300px;
+    }
+    .dates__table {
+        margin-bottom: 30px;
+    }
+    .reg__btn {
+        margin-top: 30px
+    }
+    .section__instagram .wrapper {
+        padding: 0 40px;
+    }
+    .inst__text {
+        margin-bottom: 30px;
+    }
+    .cart__info {
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width: 1279px) {
+    .section__instagram .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .halls__img {
+        height: 240px;
+        margin-bottom: 10px;
+    }
+    .halls__title {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 0;
+    }
+    .halls__info {
+        padding-bottom: 10px;
+    }
+    .halls__buttons {
+        flex-direction: column;
+    }
+    .halls__buttons .btn {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .halls__buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+    .dates__table {
+        width: 100%;
+        height: 510px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .reg__text {
+        max-width: 100%;
+    }
+    .reg__btn {
+        margin-top: 20px;
+    }
+    .section__instagram .wrapper {
+        padding: 0 15px;
+    }
+    .inst__text {
+        margin-bottom: 20px;
+    }
+    .cart__info {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .ph__img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .cart__text {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .halls__items {
+        flex-direction: column;
+    }
+    .halls__item {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .halls__item:last-child {
+        margin-bottom: 0;
+    }
+    .dates__reserv.btn {
+        width: 100%;
+    }
+    .reg__btn {
+        justify-content: center;
+        width: 100%;
+    }
+    .cart__bnt.btn {
+        width: 100%;
+    }
 }
