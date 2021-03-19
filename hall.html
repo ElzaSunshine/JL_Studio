@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="btn__container">
-                    <a href="" class="btn info__btn">забронировать</a>
+                    <a href="#modal-hall" class="btn info__btn open-modal">забронировать</a>
                 </div>
             </div>
         </section>
@@ -155,7 +155,7 @@
                 <div class="dates__table" style="background-color:  #D1AD98;">
                     <!-- таблица -->
                 </div>
-                <a class="dates__reserv btn" href="#">забронировать</a>
+                <a class="dates__reserv btn  open-modal" href="#modal-hall">забронировать</a>
             </div>
         </section>
 
@@ -173,6 +173,10 @@
                     <span class="icon-document"></span>полный список правил</a>
             </div>
         </section>
+
+        <button class="btn-up">
+            <span class="icon-top-big"></span>
+        </button>
     </main>
     <!-- footer -->
     <footer class="footer section">
@@ -203,6 +207,29 @@
             </div>
         </div>
     </footer>
+    <!--  модальное окно -->
+    <div class="modal-box" id="modal-hall">
+        <div class="modal__container">
+            <div class="modal__content">
+                <a href="#" class="modal__close close-modal">
+                    <span class="icon-cross"></span>
+                </a>
+                <h4 class="modal__title">Забронировать зал «L»</h4>
+                <div class="modal__info">Заполните выделенные поля и наш менеджер с вами свяжется</div>
+                <div class="modal__form-container">
+                    <form action="#modal" class="modal__form" id="form-hall">
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?*" class="modal__input" required>
+                        <input type="tel" name="tel" id="tel" placeholder="Телефон*" class="modal__input" required>
+                        <input type="text" name="email" id="email" placeholder="Email" class="modal__input">
+                        <textarea name="text" id="text" placeholder="Комментарий" class="modal__textarea"></textarea>
+                    </form>
+                    <button class="modal__btn btn close-modal">Забронировать</button>
+                </div>
+                <div class="modal__agree ">Нажимая на кнопку «Забронировать», вы соглашаетесь <br> с <a href="#">правилами студии и условиями использования</a></div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/swiper.js"></script>

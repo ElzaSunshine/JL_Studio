@@ -97,7 +97,7 @@
                             <div class="halls__price">от 1500 руб/час</div>
                         </div>
                         <div class="halls__buttons">
-                            <a href="#" class="halls__book btn">забронировать</a>
+                            <a href="#modal-hall" class="halls__book btn  open-modal">забронировать</a>
                             <a href="hall.html" class="halls__more btn-more">подробнее</a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <div class="halls__price">от 1700 руб/час</div>
                         </div>
                         <div class="halls__buttons">
-                            <a href="#" class="halls__book btn">забронировать</a>
+                            <a href="#modal-hall" class="halls__book btn  open-modal">забронировать</a>
                             <a href="hall.html" class="halls__more btn-more">подробнее</a>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                 <div class="dates__table" style="background-color:  #D1AD98;">
                     <!-- таблица -->
                 </div>
-                <a class="dates__reserv btn" href="#">забронировать</a>
+                <a class="dates__reserv btn  open-modal" href="#modal-hall">забронировать</a>
             </div>
         </section>
 
@@ -203,7 +203,7 @@
             <div class="wrapper flex">
                 <h3 class="title promo__title">Акции</h3>
                 <div class="promo__container">
-                    <div class="swiper-container promo-swiper">
+                    <div class="swiper-container promo-swiper" id="sw-promo">
                         <div class="swiper-wrapper promo-wrapper">
                             <div class="swiper-slide promo-slide">
                                 <a href="#" class="img promo__img hover">
@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <div class="promo__btn-container">
-                    <a href="#" class="btn promo__btn">забронировать</a>
+                    <a href="#modal-hall" class="btn promo__btn  open-modal">забронировать</a>
                 </div>
             </div>
         </section>
@@ -271,7 +271,7 @@
             <div class="wrapper">
                 <h3 class="title ph__title">Наши фотографы</h3>
                 <div class="ph__container">
-                    <div class="swiper-container ph-swiper">
+                    <div class="swiper-container ph-swiper" id="sw-ph">
                         <div class="swiper-wrapper ph-wrapper">
                             <div class="swiper-slide prh-slide">
                                 <div class="ph__photo img">
@@ -351,7 +351,7 @@
             <div class="wrapper flex-column">
                 <h3 class="title ptb__title">Программа лояльности и абонементы</h3>
                 <div class="ptb__info">
-                    <div class="ptb__img">
+                    <div class="ptb__img ptb__img-cart">
                         <img src="img/cart.png" alt="карта лояльности">
                     </div>
 
@@ -366,11 +366,13 @@
                         </ol>
                     </div>
                 </div>
-                <a href="#" class="btn ptb__bnt">забронировать</a>
+                <a href="#modal-hall" class="btn ptb__bnt  open-modal">забронировать</a>
             </div>
         </section>
 
-
+        <button class="btn-up">
+            <span class="icon-top-big"></span>
+        </button>
     </main>
     <!-- footer -->
     <footer class="footer section">
@@ -401,6 +403,28 @@
             </div>
         </div>
     </footer>
+    <!--  модальное окно -->
+    <div class="modal-box" id="modal-hall">
+        <div class="modal__container">
+            <div class="modal__content">
+                <a href="#" class="modal__close close-modal">
+                    <span class="icon-cross"></span>
+                </a>
+                <h4 class="modal__title">Забронировать зал «L»</h4>
+                <div class="modal__info">Заполните выделенные поля и наш менеджер с вами свяжется</div>
+                <div class="modal__form-container">
+                    <form action="#modal" class="modal__form" id="form-hall">
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?*" class="modal__input" required>
+                        <input type="tel" name="tel" id="tel" placeholder="Телефон*" class="modal__input" required>
+                        <input type="text" name="email" id="email" placeholder="Email" class="modal__input">
+                        <textarea name="text" id="text" placeholder="Комментарий" class="modal__textarea"></textarea>
+                    </form>
+                    <button class="modal__btn btn close-modal">Забронировать</button>
+                </div>
+                <div class="modal__agree ">Нажимая на кнопку «Забронировать», вы соглашаетесь <br> с <a href="#">правилами студии и условиями использования</a></div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/swiper.js"></script>

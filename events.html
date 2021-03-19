@@ -173,10 +173,13 @@
                         <p>Есть возможность подключения 380В, 32А и 63А</p>
                     </div>
                 </div>
-                <a href="#" class="btn ptb__bnt">забронировать</a>
+                <a href="#modal-call" class="btn ptb__bnt open-modal">связаться с нами</a>
             </div>
         </section>
 
+        <button class="btn-up">
+            <span class="icon-top-big"></span>
+        </button>
     </main>
     <!-- footer -->
     <footer class="footer section">
@@ -207,6 +210,27 @@
             </div>
         </div>
     </footer>
+
+    <!--  модальное окно -->
+    <div class="modal-box" id="modal-call">
+        <div class="modal__container">
+            <div class="modal__content">
+                <a href="#" class="modal__close close-modal">
+                    <span class="icon-cross"></span>
+                </a>
+                <h4 class="modal__title">Связаться с нами</h4>
+                <div class="modal__info">Заполните выделенные поля и наш менеджер с вами свяжется</div>
+                <div class="modal__form-container">
+                    <form action="#modal" class="modal__form" id="form-hall">
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?*" class="modal__input" required>
+                        <input type="tel" name="tel" id="tel" placeholder="Телефон*" class="modal__input" required>
+                    </form>
+                    <button class="modal__btn btn close-modal">связаться</button>
+                </div>
+                <div class="modal__agree ">Нажимая на кнопку «Забронировать», вы соглашаетесь <br> с <a href="#">правилами студии и условиями использования</a></div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/swiper.js"></script>

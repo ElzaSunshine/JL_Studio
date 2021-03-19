@@ -42,6 +42,7 @@
     display: block;
     width: 48px;
     height: 48px;
+    min-width: 48px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -107,6 +108,13 @@
     line-height: 24px;
     color: #D1AD98;
     padding-right: 15px;
+}
+
+.header-top__phone:hover,
+.header-top__phone:focus,
+.header-top__phone:hover span:before,
+.header-top__phone:focus span:before {
+    color: #BD957F;
 }
 
 .header-top__address {
@@ -282,6 +290,7 @@
 .header__menu {
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 5;
     width: 100%;
 }
@@ -428,6 +437,9 @@
     .header-top__main-nav {
         display: none;
     }
+    .header-top__nav {
+        padding-bottom: 70px;
+    }
     .header-top__main-nav.active {
         position: fixed;
         top: 0;
@@ -530,7 +542,7 @@
         padding-bottom: 30px;
     }
     .header-top__right {
-        bottom: 60px;
+        bottom: 40px;
     }
 }
 
