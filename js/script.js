@@ -13,56 +13,84 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     //якорные ссылки
-    // const itemMenu = document.querySelectorAll(".header-menu__item");
-    // if (itemMenu.length > 0) {
-    //     itemMenu.forEach(function(item) {
-    //         item.addEventListener("click", function() {
-    //             let href = item.getAttribute('href');
-    //             if (href.indexOf("#") === 0) {
-    //                 e.preventDefault();
+    const itemMenu = document.querySelectorAll(".header-menu__item");
+    if (itemMenu.length > 0) {
+        itemMenu.forEach(function(item) {
+            item.addEventListener("click", function() {
+                let href = item.getAttribute('href');
+                if (href.indexOf("#") === 0) {
+                    e.preventDefault();
 
-    //                 $("html, body").animate({
-    //                     scrollTop: $(href).offset().top,
-    //                 }, 200);
-    //             }
-    //         })
-    //     })
-    // }
+                    $("html, body").animate({
+                        scrollTop: $(href).offset().top,
+                    }, 600);
+                }
+            })
+        })
+    }
 
 
     // кнопка наверх
     let btn = document.querySelector(".btn-up");
     if (btn) {
         window.addEventListener("scroll", function() {
-
             if (window.scrollY > 450) {
                 btn.classList.add("show");
             } else {
                 btn.classList.remove("show");
             }
-
         });
         btn.addEventListener("click", function(e) {
             e.preventDefault();
             $('html, body').stop().animate({ scrollTop: 0 }, 300);
-            // window.scrollTo(pageXOffset, 0);
         })
     }
 
+    //swiper снято у нас
+    let swiperPhoto = undefined;
+
+    function initSwiperInst() {
+        if (window.matchMedia("(max-width: 767px)").matches && swiperPhoto == undefined) {
+            swiperPhoto = new Swiper("#inst-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    prevEl: ".b-i",
+                    nextEl: ".f-i"
+                },
+            })
+        } else {
+            if (window.matchMedia("(min-width: 768px)").matches && swiperPhoto != undefined && swiperPhoto != null) {
+                swiperPhoto.destroy();
+                swiperPhoto = undefined;
+            }
+        }
+    }
 
     //swiper акции
     const swiperPromo = new Swiper("#sw-promo", {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-            prevEl: ".slider-btn_back",
-            nextEl: ".slider-btn_forward"
+            prevEl: ".b-p",
+            nextEl: ".f-p"
         },
         breakpoints: {
-            768: {
+            767: {
                 slidesPerView: 1,
             },
         },
+        on: {
+            init: function() {
+                $(".promo__btns").toggle(this.params.slidesPerView < this.slides.length)
+            },
+            breakpoint: function() {
+                $(".promo__btns").toggle(this.params.slidesPerView < this.slides.length);
+            },
+            destroy: function() {
+                $(".promo__btns").hide();
+            },
+        }
     })
 
     //swiper фотографы
@@ -70,51 +98,108 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
-            prevEl: ".slider-btn_back.btn-slider",
-            nextEl: ".slider-btn_forward.btn-slider"
+            prevEl: ".b-ph",
+            nextEl: ".f-ph"
         },
         breakpoints: {
             1024: {
                 slidesPerView: 3,
             },
-            768: {
+            767: {
                 slidesPerView: 1,
             },
         },
-        // on: {
-        //     init: function() {
-        //         $(".ph__btns").toggle($(".swiperPeople").slidesPerView < this.slides.length)
-        //     },
-        //     breakpoint: function() {
-        //         $(".ph__btns").toggle(this.params.slidesPerView < this.slides.length);
-        //     },
-        //     destroy: function() {
-        //         $(".ph__btns").hide();
-        //     },
-        // }
+        on: {
+            init: function() {
+                $(".ph__btns").toggle(this.params.slidesPerView < this.slides.length)
+            },
+            breakpoint: function() {
+                $(".ph__btns").toggle(this.params.slidesPerView < this.slides.length);
+            },
+            destroy: function() {
+                $(".ph__btns").hide();
+            },
+        }
     })
 
 
-    //swiper video 
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-        const swiperVideo = new Swiper("#sw-video", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                prevEl: ".slider-btn_back.btn-slider",
-                nextEl: ".slider-btn_forward.btn-slider"
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 1,
-                },
-            },
+    //swiper наши услуги
+    let swiperServices = undefined;
 
-        })
+    function initSwiperServices() {
+        if (window.matchMedia("(max-width: 767px)").matches && swiperServices == undefined) {
+            swiperServices = new Swiper("#services-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    prevEl: ".b-s",
+                    nextEl: ".f-s"
+                },
+            })
+        } else if (window.matchMedia("(min-width: 768px)").matches && swiperServices != undefined && swiperServices != null) {
+            {
+                swiperServices.destroy();
+                swiperServices = undefined;
+            }
+        }
     }
+
+    //swiper video 
+    const swiperVideo = new Swiper("#sw-video", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            prevEl: ".b-v",
+            nextEl: ".f-v"
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 1,
+            },
+        },
+        on: {
+            init: function() {
+                $(".video__btns").toggle(this.params.slidesPerView < this.slides.length)
+            },
+            breakpoint: function() {
+                $(".video__btns").toggle(this.params.slidesPerView < this.slides.length);
+            },
+            destroy: function() {
+                $(".video__btns").hide();
+            },
+        }
+    })
+
+    //swiper фото студии
+    let swiperStudio = undefined;
+
+    function initSwiperStudio() {
+        if (window.matchMedia("(max-width: 767px)").matches && swiperStudio == undefined) {
+            swiperStudio = new Swiper("#studio-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    prevEl: ".b-st",
+                    nextEl: ".f-st"
+                },
+            })
+        } else {
+            if (window.matchMedia("(min-width: 768px)").matches && swiperStudio != undefined && swiperStudio != null) {
+                swiperStudio.destroy();
+                swiperStudio = undefined;
+            }
+        }
+    }
+
+    initSwiperInst();
+    initSwiperServices();
+    initSwiperStudio();
+    window.addEventListener("resize", function() {
+        initSwiperInst();
+        initSwiperServices();
+        initSwiperStudio();
+    })
+
     //modal 
     const btnOpn = document.querySelectorAll(".open-modal");
     const modalCloseBtn = document.querySelector(".modal__close");

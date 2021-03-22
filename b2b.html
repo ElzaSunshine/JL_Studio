@@ -69,11 +69,11 @@
             <div class="header__menu">
                 <div class="wrapper">
                     <ul>
-                        <li class="header-menu__item"><a href="#">Услуги</a></li>
-                        <li class="header-menu__item"><a href="#">Работы</a></li>
-                        <li class="header-menu__item"><a href="#">О нас</a></li>
-                        <li class="header-menu__item"><a href="#">Клиенты</a></li>
-                        <li class="header-menu__item"><a href="#">Связаться с нами</a></li>
+                        <li class="header-menu__item"><a href="#services">Услуги</a></li>
+                        <li class="header-menu__item"><a href="#video">Работы</a></li>
+                        <li class="header-menu__item"><a href="#about-us">О нас</a></li>
+                        <li class="header-menu__item"><a href="#clients">Клиенты</a></li>
+                        <li class="header-menu__item"><a href="#connect">Связаться с нами</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,93 +81,118 @@
     </header>
     <!-- main -->
     <main>
-        <section class="section section__services">
+        <section class="section section__services" id="services">
             <div class="wrapper">
                 <h3 class="title services__title">Наши услуги</h3>
                 <div class="services__container">
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover open-modal">
-                            <img src="img/services/s1.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Имиджевые ролики</div>
-                            <div class="item__price">от 15 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
+                    <div class="swiper-container services-swiper" id="services-swiper">
+                        <div class="swiper-wrapper services-wrapper">
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover open-modal">
+                                        <img src="img/services/s1.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Имиджевые ролики</div>
+                                        <div class="item__price">от 15 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover open-modal">
+                                        <img src="img/services/s2.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Музыкальные клипы</div>
+                                        <div class="item__price">от 25 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover  open-modal">
+                                        <img src="img/services/s3.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Рекламные ролики</div>
+                                        <div class="item__price">от 35 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover  open-modal">
+                                        <img src="img/services/s4.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Ведение Youtube каналов</div>
+                                        <div class="item__price">от 5 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover  open-modal">
+                                        <img src="img/services/s5.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Портретная фотография</div>
+                                        <div class="item__price">от 5 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide services-slide">
+                                <div class="servive__item">
+                                    <a href="#modal-service" class="item__img img hover  open-modal">
+                                        <img src="img/services/s6.jpg" alt="">
+                                    </a>
+                                    <div class="item__info">
+                                        <div class="item__name">Предметная съемка</div>
+                                        <div class="item__price">от 10 000 руб</div>
+                                    </div>
+                                    <div class="items__buttons">
+                                        <a href="#" class="item__book btn">заказать</a>
+                                        <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover open-modal">
-                            <img src="img/services/s2.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Музыкальные клипы</div>
-                            <div class="item__price">от 25 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
-                        </div>
-                    </div>
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover  open-modal">
-                            <img src="img/services/s3.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Рекламные ролики</div>
-                            <div class="item__price">от 35 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more open-modal">подробнее</a>
-                        </div>
-                    </div>
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover  open-modal">
-                            <img src="img/services/s4.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Ведение Youtube каналов</div>
-                            <div class="item__price">от 5 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
-                        </div>
-                    </div>
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover  open-modal">
-                            <img src="img/services/s5.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Портретная фотография</div>
-                            <div class="item__price">от 5 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
-                        </div>
-                    </div>
-                    <div class="servive__item">
-                        <a href="#modal-service" class="item__img img hover  open-modal">
-                            <img src="img/services/s6.jpg" alt="">
-                        </a>
-                        <div class="item__info">
-                            <div class="item__name">Предметная съемка</div>
-                            <div class="item__price">от 10 000 руб</div>
-                        </div>
-                        <div class="items__buttons">
-                            <a href="#" class="item__book btn">заказать</a>
-                            <a href="#modal-service" class="item__more btn-more  open-modal">подробнее</a>
-                        </div>
+                    <div class="services__btns">
+                        <button class="slider-btn_back btn-slider b-s">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider f-s">
+                            <span class="icon-right-big"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section__video section">
+        <section class="section__video section" id="video">
             <div class="wrapper">
                 <h3 class="title video__title">Примеры наших работ</h3>
                 <div class="videos__container">
@@ -230,10 +255,10 @@
                         </div>
                     </div>
                     <div class="video__btns">
-                        <button class="slider-btn_back btn-slider">
+                        <button class="slider-btn_back btn-slider b-v">
                             <span class="icon-left-big"></span>
                         </button>
-                        <button class="slider-btn_forward btn-slider">
+                        <button class="slider-btn_forward btn-slider f-v">
                             <span class="icon-right-big"></span>
                         </button>
                     </div>
@@ -244,7 +269,7 @@
             </div>
         </section>
 
-        <section class="section__text-photo section">
+        <section class="section__text-photo section" id="about-us">
             <div class="wrapper">
                 <h3 class="title tp__title">О нас</h3>
                 <div class="tp__info">
@@ -267,7 +292,7 @@
             </div>
         </section>
 
-        <section class="section section__clients">
+        <section class="section section__clients" id="clients">
             <div class="wrapper">
                 <h3 class="title clients__title">Наши клиенты</h3>
                 <div class="clients__container">
@@ -340,7 +365,7 @@
         </button>
     </main>
     <!-- footer -->
-    <footer class="footer section">
+    <footer class="footer section" id="connect">
         <div class="wrapper">
             <div class="footer__info flex-column">
                 <h3 class="footer__title title">Контакты</h3>

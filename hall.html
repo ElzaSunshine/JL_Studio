@@ -69,11 +69,11 @@
             <div class="header__menu">
                 <div class="wrapper">
                     <ul>
-                        <li class="header-menu__item"><a href="#">Информация о зале</a></li>
-                        <li class="header-menu__item"><a href="#">Свободные даты</a></li>
-                        <li class="header-menu__item"><a href="#">Снято в этом зале</a></li>
-                        <li class="header-menu__item"><a href="#">Правила</a></li>
-                        <li class="header-menu__item"><a href="#">Забронировать</a></li>
+                        <li class="header-menu__item"><a href="#information">Информация о зале</a></li>
+                        <li class="header-menu__item"><a href="#free-dates">Свободные даты</a></li>
+                        <li class="header-menu__item"><a href="#photos">Снято в этом зале</a></li>
+                        <li class="header-menu__item"><a href="#rules">Правила</a></li>
+                        <li class="header-menu__item"><a href="#book">Забронировать</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,7 +81,7 @@
     </header>
     <!-- main -->
     <main>
-        <section class="section section__info">
+        <section class="section section__info" id="information">
             <div class="wrapper">
                 <div class="info__flex-container">
                     <div class="info__item">
@@ -124,32 +124,84 @@
             <div class="wrapper-studio">
                 <div class="studio__container">
                     <div class="studio__left">
-                        <div class="studio__img img">
-                            <img src="img/header1.png" alt="">
+                        <div class="studio__img-container">
+                            <a class="studio__img_d">
+                                <img src="img/header1.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="studio__right">
-                        <div class="studio__img img">
-                            <img src="img/hall1.jpg" alt="">
+                        <div class="studio__img-container">
+                            <div class="studio__img_d">
+                                <img src="img/hall1.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="studio__img img">
-                            <img src="img/header1.png" alt="">
+                        <div class="studio__img-container">
+                            <div class="studio__img_d">
+                                <img src="img/header1.png" alt="">
+                            </div>
                         </div>
-                        <div class="studio__img img">
-                            <img src="img/hall2.jpg" alt="">
+                        <div class="studio__img-container">
+                            <div class="studio__img_d">
+                                <img src="img/hall2.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="studio__img img">
-                            <img src="img/header1.png" alt="">
+                        <div class="studio__img-container">
+                            <div class="studio__img_d">
+                                <img src="img/header1.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- mobile-slider -->
+                <div class="studio__container_mobile">
+                    <div class="swiper-container studio-swiper" id="studio-swiper">
+                        <div class="swiper-wrapper studio-wrapper">
+                            <div class="swiper-slide studio-slide">
+                                <div class="studio__img img">
+                                    <img src="img/header1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide studio-slide">
+                                <div class="studio__img img">
+                                    <img src="img/hall1.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide studio-slide">
+                                <div class="studio__img img">
+                                    <img src="img/header1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide studio-slide">
+                                <div class="studio__img img">
+                                    <img src="img/hall2.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide studio-slide">
+                                <div class="studio__img img">
+                                    <img src="img/header1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studio__btns">
+                        <button class="slider-btn_back btn-slider b-st">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider f-st">
+                            <span class="icon-right-big"></span>
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- добавить снято в этом зале -->
-
-
-        <section class="section__dates section">
+        <section class="section__dates section" id="free-dates">
             <div class="wrapper flex-column">
                 <h3 class="title dates__title">Свободные даты</h3>
                 <div class="dates__table" style="background-color:  #D1AD98;">
@@ -159,8 +211,72 @@
             </div>
         </section>
 
+        <section class="section__instagram section" id="photos">
+            <div class="wrapper">
+                <h3 class="title inst__title">Cнято у нас</h3>
+                <div class="inst__text">Ещё больше фотографий в нашем
+                    <a href="#">Instagram
+                        <span class="icon-instagram"></span>
+                    </a>
+                </div>
+                <div class="inst__container">
+                    <div class="swiper-container inst-swiper" id="inst-swiper">
+                        <div class="swiper-wrapper inst-wrapper">
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/6.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/7.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide inst-slide">
+                                <a href="#" class="hover">
+                                    <img src="img/inst/8.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inst__btns">
+                        <button class="slider-btn_back btn-slider b-i">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider f-i">
+                            <span class="icon-right-big"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="section__regulations section">
+        <section class="section__regulations section" id="rules">
             <div class="wrapper flex-column">
                 <h3 class="title reg__title">Правила</h3>
                 <div class="reg__text">
@@ -174,12 +290,9 @@
             </div>
         </section>
 
-        <button class="btn-up">
-            <span class="icon-top-big"></span>
-        </button>
     </main>
     <!-- footer -->
-    <footer class="footer section">
+    <footer class="footer section" id="book">
         <div class="wrapper">
             <div class="footer__info flex-column">
                 <h3 class="footer__title title">Контакты</h3>
@@ -230,6 +343,9 @@
         </div>
     </div>
 
+    <button class="btn-up">
+        <span class="icon-top-big"></span>
+    </button>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/swiper.js"></script>

@@ -79,8 +79,15 @@ h5 {
 }
 
 .flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -102,13 +109,27 @@ h5 {
 }
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .soc-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #A7A7A6;
     height: 34px;
@@ -118,6 +139,7 @@ h5 {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    padding-bottom: 1.5px
 }
 
 .soc-item:hover,
@@ -237,8 +259,14 @@ main {
     width: 44px;
     border-radius: 50%;
     background-color: #F7F7F7;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     z-index: 10;
@@ -294,6 +322,8 @@ main ol {
 }
 
 main li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
 }
@@ -315,8 +345,14 @@ main li::before {
     background-color: #D1AD98;
     color: #fff;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -500,14 +536,26 @@ p a:hover {
 }
 
 .modal__form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 30px;
 }
 
 .modal__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 370px;
 }
@@ -618,8 +666,15 @@ p a:hover {
 }
 
 .modal-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -637,6 +692,8 @@ p a:hover {
 }
 
 .modal__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -767,9 +824,6 @@ p a:hover {
     .slider-btn_forward {
         right: 5px;
     }
-    .modal__content {
-        padding: 30px;
-    }
     .modal__form,
     .modal__btn.btn {
         width: 100%;
@@ -779,13 +833,31 @@ p a:hover {
         padding: 0;
         height: 100%;
         overflow: auto;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
     }
-    .modal__content {
+    .modal__content,
+    .modal__content.service {
         height: 100%;
         min-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 30px;
     }
     .modal__video {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .video-slide._service {
@@ -793,7 +865,16 @@ p a:hover {
         margin-right: 0;
     }
     .modal__content.service {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
         overflow: auto;
+    }
+    .modal__textarea {
+        width: 100%;
+    }
+    .btn-up {
+        left: 15px;
+        bottom: 15px;
     }
 }

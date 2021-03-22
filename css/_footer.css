@@ -35,6 +35,8 @@
 }
 
 .footer__place {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     max-height: 500px;
@@ -80,6 +82,9 @@
 
 @media(max-width: 767px) {
     .footer__place {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         max-height: auto;
     }

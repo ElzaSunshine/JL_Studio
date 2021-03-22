@@ -1,4 +1,6 @@
 .halls__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -33,6 +35,8 @@
 }
 
 .halls__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -70,6 +74,9 @@
         padding-bottom: 10px;
     }
     .halls__buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .halls__buttons .btn {
@@ -83,6 +90,9 @@
 
 @media(max-width: 767px) {
     .halls__items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .halls__item {
@@ -136,7 +146,11 @@
 }
 
 .reg__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 40px
 }
@@ -166,6 +180,8 @@
 
 @media(max-width: 767px) {
     .reg__btn {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
@@ -188,7 +204,11 @@
 }
 
 .inst__text a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #D1AD98;
 }
@@ -214,23 +234,42 @@
 .swiper-container.inst-swiper {}
 
 .swiper-wrapper.inst-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 25vw 25vw; */
 }
 
 .swiper-slide.inst-slide {
     width: auto;
+    display: block;
+    width: 100%;
+    flex: 1 0 25%;
 }
 
-.inst-slide a {}
+.inst-slide a {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
 
 .inst-slide img {
     display: block;
     width: 100%;
     height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.inst__btns {
+    display: none;
 }
 
 @media(max-width: 1919px) {
@@ -263,6 +302,26 @@
     }
 }
 
+@media(max-width: 767px) {
+    .swiper-wrapper.inst-wrapper {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .swiper-slide.inst-slide {
+        width: 100%;
+        display: block;
+        flex: 1 0 100%;
+    }
+    .inst-slide a {
+        display: block;
+        overflow: hidden;
+        padding-bottom: 100%;
+    }
+    .inst__btns {
+        display: block;
+    }
+}
+
 
 /*акции*/
 
@@ -275,6 +334,8 @@
 }
 
 .swiper-wrapper.promo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -292,7 +353,11 @@
 }
 
 .promo__btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 40px;
 }
@@ -339,6 +404,8 @@
 }
 
 .swiper-wrapper.ph-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -372,7 +439,11 @@
 }
 
 .ph__inst {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #D1AD98;
 }
@@ -438,6 +509,8 @@
 /*карта*/
 
 .ptb__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding-bottom: 40px;
@@ -474,6 +547,9 @@
 
 @media(max-width: 1023px) {
     .ptb__info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-bottom: 20px;
     }

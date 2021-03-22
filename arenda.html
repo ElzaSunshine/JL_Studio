@@ -70,13 +70,13 @@
             <div class="header__menu">
                 <div class="wrapper">
                     <ul>
-                        <li class="header-menu__item"><a href="#">Наши залы</a></li>
-                        <li class="header-menu__item"><a href="#">Cвободные даты</a></li>
-                        <li class="header-menu__item"><a href="#">Правила</a></li>
-                        <li class="header-menu__item"><a href="#">Снято у нас</a></li>
-                        <li class="header-menu__item"><a href="#">Акции</a></li>
-                        <li class="header-menu__item"><a href="#">Фотографы</a></li>
-                        <li class="header-menu__item"><a href="#">Программа лояльности и абонементы</a></li>
+                        <li class="header-menu__item"><a href="#halls">Наши залы</a></li>
+                        <li class="header-menu__item"><a href="#free-dates">Cвободные даты</a></li>
+                        <li class="header-menu__item"><a href="#rules">Правила</a></li>
+                        <li class="header-menu__item"><a href="#photos">Снято у нас</a></li>
+                        <li class="header-menu__item"><a href="#promo">Акции</a></li>
+                        <li class="header-menu__item"><a href="#photographers">Фотографы</a></li>
+                        <li class="header-menu__item"><a href="#program">Программа лояльности и абонементы</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +84,7 @@
     </header>
     <!-- main -->
     <main>
-        <section class="section-halls section">
+        <section class="section-halls section" id="halls">
             <div class="wrapper">
                 <h3 class="title section-halls__title">Наши залы</h3>
                 <div class="halls__items">
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="section__dates section">
+        <section class="section__dates section" id="free-dates">
             <div class="wrapper flex-column">
                 <h3 class="title dates__title">Свободные даты</h3>
                 <div class="dates__table" style="background-color:  #D1AD98;">
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <section class="section__regulations section">
+        <section class="section__regulations section" id="rules">
             <div class="wrapper flex-column">
                 <h3 class="title reg__title">Правила</h3>
                 <div class="reg__text">
@@ -142,7 +142,7 @@
             </div>
         </section>
 
-        <section class="section__instagram section">
+        <section class="section__instagram section" id="photos">
             <div class="wrapper">
                 <h3 class="title inst__title">Cнято у нас</h3>
                 <div class="inst__text">Ещё больше фотографий в нашем
@@ -151,55 +151,63 @@
                     </a>
                 </div>
                 <div class="inst__container">
-                    <div class="swiper-container inst-swiper">
+                    <div class="swiper-container inst-swiper" id="inst-swiper">
                         <div class="swiper-wrapper inst-wrapper">
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/1.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/2.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/3.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/4.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/5.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/6.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/7.png" alt="">
                                 </a>
                             </div>
                             <div class="swiper-slide inst-slide">
-                                <a href="#" class="">
+                                <a href="#" class="hover">
                                     <img src="img/inst/8.png" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
+                    <div class="inst__btns">
+                        <button class="slider-btn_back btn-slider b-i">
+                            <span class="icon-left-big"></span>
+                        </button>
+                        <button class="slider-btn_forward btn-slider f-i">
+                            <span class="icon-right-big"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section__promo section">
+        <section class="section__promo section" id="promo">
             <div class="wrapper flex">
                 <h3 class="title promo__title">Акции</h3>
                 <div class="promo__container">
@@ -253,10 +261,10 @@
                         </div>
                     </div>
                     <div class="promo__btns">
-                        <button class="slider-btn_back btn-slider">
+                        <button class="slider-btn_back btn-slider b-p">
                             <span class="icon-left-big"></span>
                         </button>
-                        <button class="slider-btn_forward btn-slider">
+                        <button class="slider-btn_forward btn-slider f-p">
                             <span class="icon-right-big"></span>
                         </button>
                     </div>
@@ -267,7 +275,7 @@
             </div>
         </section>
 
-        <section class="section__photographers section">
+        <section class="section__photographers section" id="photographers">
             <div class="wrapper">
                 <h3 class="title ph__title">Наши фотографы</h3>
                 <div class="ph__container">
@@ -336,10 +344,10 @@
                         </div>
                     </div>
                     <div class="ph__btns">
-                        <button class="slider-btn_back btn-slider">
+                        <button class="slider-btn_back btn-slider b-ph">
                             <span class="icon-left-big"></span>
                         </button>
-                        <button class="slider-btn_forward btn-slider">
+                        <button class="slider-btn_forward btn-slider f-ph">
                             <span class="icon-right-big"></span>
                         </button>
                     </div>
@@ -347,7 +355,7 @@
             </div>
         </section>
 
-        <section class="section__photo-text-btn section">
+        <section class="section__photo-text-btn section" id="program">
             <div class="wrapper flex-column">
                 <h3 class="title ptb__title">Программа лояльности и абонементы</h3>
                 <div class="ptb__info">
@@ -370,9 +378,7 @@
             </div>
         </section>
 
-        <button class="btn-up">
-            <span class="icon-top-big"></span>
-        </button>
+
     </main>
     <!-- footer -->
     <footer class="footer section">
@@ -425,6 +431,9 @@
             </div>
         </div>
     </div>
+    <button class="btn-up">
+        <span class="icon-top-big"></span>
+    </button>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/swiper.js"></script>
