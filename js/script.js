@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         itemMenu.forEach(function(item) {
             item.addEventListener("click", function() {
                 let href = item.getAttribute('href');
-                if (href.indexOf("#") === 0) {
+                if (href) {
                     e.preventDefault();
 
                     $("html, body").animate({
@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function initSwiperInst() {
         if (window.matchMedia("(max-width: 767px)").matches && swiperPhoto == undefined) {
+
             swiperPhoto = new Swiper("#inst-swiper", {
                 slidesPerView: 1,
                 spaceBetween: 0,
@@ -58,6 +59,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     prevEl: ".b-i",
                     nextEl: ".f-i"
                 },
+                on: {
+                    init: function() {
+                        $(".inst__btns").toggle(this.params.slidesPerView < this.slides.length)
+                    },
+                    breakpoint: function() {
+                        $(".inst__btns").toggle(this.params.slidesPerView < this.slides.length);
+                    },
+                    destroy: function() {
+                        $(".inst__btns").hide();
+                    },
+                }
             })
         } else {
             if (window.matchMedia("(min-width: 768px)").matches && swiperPhoto != undefined && swiperPhoto != null) {
@@ -68,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //swiper акции
+
     const swiperPromo = new Swiper("#sw-promo", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -94,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     //swiper фотографы
+
     const swiperPeople = new Swiper("#sw-ph", {
         slidesPerView: 4,
         spaceBetween: 30,
@@ -135,14 +149,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     prevEl: ".b-s",
                     nextEl: ".f-s"
                 },
+                on: {
+                    init: function() {
+                        $(".services__btns").toggle(this.params.slidesPerView < this.slides.length)
+                    },
+                    breakpoint: function() {
+                        $(".services__btns").toggle(this.params.slidesPerView < this.slides.length);
+                    },
+                    destroy: function() {
+                        $(".services__btns").hide();
+                    },
+                }
             })
         } else if (window.matchMedia("(min-width: 768px)").matches && swiperServices != undefined && swiperServices != null) {
-            {
-                swiperServices.destroy();
-                swiperServices = undefined;
-            }
+            swiperServices.destroy();
+            swiperServices = undefined;
         }
     }
+
 
     //swiper video 
     const swiperVideo = new Swiper("#sw-video", {
@@ -249,6 +273,4 @@ document.addEventListener("DOMContentLoaded", function() {
     $(".modal__input[type='tel']").each(function() {
         $(this).mask("+7 (000) 000-00-00")
     })
-
-
 })

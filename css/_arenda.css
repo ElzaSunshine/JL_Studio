@@ -493,6 +493,10 @@
     .ph__btns .slider-btn_forward {
         top: calc(105px - 22px);
     }
+    .swiper-slide.prh-slide {
+        width: calc(33.333% - 20px);
+        margin-right: 30px;
+    }
 }
 
 @media(max-width:767px) {
@@ -502,6 +506,10 @@
     .ph__btns .slider-btn_back,
     .ph__btns .slider-btn_forward {
         top: calc(145px - 22px);
+    }
+    .swiper-slide.prh-slide {
+        width: 100%;
+        margin-right: 30px;
     }
 }
 
