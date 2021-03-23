@@ -12,6 +12,39 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.toggle("hidden");
     })
 
+    //scroll menu
+    const header = document.querySelector('.header__menu');
+    if (header) {
+        const sticky = header.offsetTop + 70;
+        const menuItem = document.querySelectorAll(".header-menu__item");
+        window.addEventListener('scroll', function() {
+
+            header.classList.toggle('_scroll', window.scrollY > sticky);
+            if (window.scrollY < sticky) {
+                menuItem.forEach((function(el) {
+                    el.classList.remove("_active");
+                }))
+            }
+            let scrollDistance = window.scrollY;
+            const sect = document.querySelectorAll('.section');
+            for (let i = 0; i < sect.length; i++) {
+                if (sect[i].offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
+                    menuItem.forEach(function(el) {
+                        if (el.classList.contains('_active')) {
+                            el.classList.remove('_active');
+                        }
+                    })
+                    if (sect.length > menuItem.length && i == sect.length - 1) {
+                        continue
+                    } else {
+                        menuItem[i].classList.add('_active');
+                    }
+                }
+            }
+        })
+    }
+
+
     //якорные ссылки
     const itemMenu = document.querySelectorAll(".header-menu__item");
     if (itemMenu.length > 0) {
@@ -206,6 +239,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     prevEl: ".b-st",
                     nextEl: ".f-st"
                 },
+                on: {
+                    init: function() {
+                        $(".studio__btns").toggle(this.params.slidesPerView < this.slides.length)
+                    },
+                    breakpoint: function() {
+                        $(".studio__btns").toggle(this.params.slidesPerView < this.slides.length);
+                    },
+                    destroy: function() {
+                        $(".studio__btns").hide();
+                    },
+                }
             })
         } else {
             if (window.matchMedia("(min-width: 768px)").matches && swiperStudio != undefined && swiperStudio != null) {
